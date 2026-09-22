@@ -1,83 +1,245 @@
-```javascript
-// =========================
-// MOBILE MENU
-// =========================
+// =====================================
+// MOBILE NAVIGATION
+// =====================================
 
-const menuBtn = document.getElementById("menuBtn");
-const navMenu = document.getElementById("navMenu");
+const menuBtn =
+    document.getElementById("menuBtn");
 
-menuBtn.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-});
+const navMenu =
+    document.getElementById("navMenu");
 
 
-// Close mobile menu after clicking a link
+if (menuBtn && navMenu) {
 
-const navLinks = document.querySelectorAll("#navMenu a");
+    menuBtn.addEventListener(
+        "click",
+        () => {
+
+            navMenu.classList.toggle(
+                "active"
+            );
+
+        }
+    );
+
+}
+
+
+// =====================================
+// CLOSE MOBILE MENU
+// =====================================
+
+const navLinks =
+    document.querySelectorAll(
+        "#navMenu a"
+    );
+
 
 navLinks.forEach((link) => {
 
-    link.addEventListener("click", () => {
+    link.addEventListener(
+        "click",
+        () => {
 
-        navMenu.classList.remove("active");
+            if (navMenu) {
 
-    });
+                navMenu.classList.remove(
+                    "active"
+                );
+
+            }
+
+        }
+    );
 
 });
 
 
-// =========================
+// =====================================
 // CURRENT YEAR
-// =========================
+// =====================================
 
-document.getElementById("year").textContent =
-    new Date().getFullYear();
+const year =
+    document.getElementById("year");
 
 
-// =========================
-// SCROLL REVEAL
-// =========================
+if (year) {
 
-const revealElements = document.querySelectorAll(
-    ".skill-card, .project-card, .focus-item, .stat-card"
+    year.textContent =
+        new Date().getFullYear();
+
+}
+
+
+// =====================================
+// ACTIVE NAVIGATION
+// =====================================
+
+const sections =
+    document.querySelectorAll(
+        "section[id]"
+    );
+
+
+function updateNavigation() {
+
+    let currentSection = "";
+
+
+    sections.forEach((section) => {
+
+        const sectionTop =
+            section.offsetTop - 160;
+
+
+        if (
+            window.scrollY >=
+            sectionTop
+        ) {
+
+            currentSection =
+                section.getAttribute(
+                    "id"
+                );
+
+        }
+
+    });
+
+
+    navLinks.forEach((link) => {
+
+        link.classList.remove(
+            "active"
+        );
+
+
+        const href =
+            link.getAttribute("href");
+
+
+        if (
+            href ===
+            `#${currentSection}`
+        ) {
+
+            link.classList.add(
+                "active"
+            );
+
+        }
+
+    });
+
+}
+
+
+window.addEventListener(
+    "scroll",
+    updateNavigation
 );
 
-const observer = new IntersectionObserver(
-    (entries) => {
 
-        entries.forEach((entry) => {
+// =====================================
+// REVEAL ANIMATIONS
+// =====================================
 
-            if (entry.isIntersecting) {
+const animatedElements =
+    document.querySelectorAll(
+        ".case-study, .pipeline-step, .stack-group, .interview-card"
+    );
 
-                entry.target.style.opacity = "1";
 
-                entry.target.style.transform =
-                    "translateY(0)";
+if (
+    "IntersectionObserver" in window
+) {
 
-                observer.unobserve(entry.target);
+    const observer =
+        new IntersectionObserver(
+
+            (entries) => {
+
+                entries.forEach(
+                    (entry) => {
+
+                        if (
+                            entry.isIntersecting
+                        ) {
+
+                            entry.target.style.opacity =
+                                "1";
+
+                            entry.target.style.transform =
+                                "translateY(0)";
+
+                            observer.unobserve(
+                                entry.target
+                            );
+
+                        }
+
+                    }
+                );
+
+            },
+
+            {
+                threshold: 0.12
+            }
+
+        );
+
+
+    animatedElements.forEach(
+        (element) => {
+
+            element.style.opacity =
+                "0";
+
+            element.style.transform =
+                "translateY(25px)";
+
+            element.style.transition =
+                "opacity 0.7s ease, transform 0.7s ease";
+
+            observer.observe(
+                element
+            );
+
+        }
+    );
+
+}
+
+
+// =====================================
+// ESCAPE KEY
+// =====================================
+
+document.addEventListener(
+    "keydown",
+    (event) => {
+
+        if (
+            event.key === "Escape"
+        ) {
+
+            if (navMenu) {
+
+                navMenu.classList.remove(
+                    "active"
+                );
 
             }
 
-        });
+        }
 
-    },
-    {
-        threshold: 0.12
     }
 );
 
 
-revealElements.forEach((element) => {
+// =====================================
+// INITIAL STATE
+// =====================================
 
-    element.style.opacity = "0";
-
-    element.style.transform =
-        "translateY(20px)";
-
-    element.style.transition =
-        "opacity 0.6s ease, transform 0.6s ease";
-
-    observer.observe(element);
-
-});
-```
+updateNavigation();

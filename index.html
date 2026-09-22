@@ -1,258 +1,291 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="description"
-        content="Abhishek Shinde - AI/ML Engineer Portfolio">
+    <meta
+        name="description"
+        content="Abhishek Shinde - AI/ML Engineer Portfolio"
+    >
 
     <title>Abhishek Shinde | AI/ML Engineer</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-    <!-- NAVBAR -->
+    <!-- =====================================
+         NAVIGATION
+    ====================================== -->
 
     <header class="navbar">
 
-        <div class="nav-container">
+        <div class="container nav-container">
 
             <a href="#home" class="logo">
-                Abhishek<span>.</span>
+                <span></span> ABHISHEK SHINDE
             </a>
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="Toggle navigation"
+            >
+                ☰
+            </button>
 
             <nav id="navMenu">
 
                 <a href="#home">Home</a>
 
-                <a href="#about">About</a>
+                <a href="#engineering">
+                    Engineering
+                </a>
 
-                <a href="#skills">Skills</a>
+                <a href="#projects">
+                    Projects
+                </a>
 
-                <a href="#projects">Projects</a>
+                <a href="#skills">
+                    Stack
+                </a>
 
-                <a href="#contact">Contact</a>
+                <a href="#contact">
+                    Contact
+                </a>
 
             </nav>
-
-            <button
-                class="menu-btn"
-                id="menuBtn">
-                ☰
-            </button>
 
         </div>
 
     </header>
 
 
-    <!-- HERO -->
-
-    <section id="home" class="hero">
-
-        <div class="hero-container">
-
-            <div class="hero-content">
-
-                <p class="eyebrow">
-                    AI / ML ENGINEER
-                </p>
-
-                <h1>
-                    Building practical
-                    <span>AI systems</span>
-                    that solve real problems.
-                </h1>
-
-                <p class="hero-description">
-
-                    Python-focused AI/ML developer building
-                    intelligent applications using machine
-                    learning, APIs, automation and
-                    conversational AI.
-
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="#projects"
-                        class="btn btn-primary">
-                        View Projects
-                    </a>
-
-                    <a
-                        href="https://github.com/shinde-abhishek"
-                        target="_blank"
-                        class="btn btn-secondary">
-                        GitHub
-                    </a>
-
-                </div>
-
-            </div>
+    <main>
 
 
-            <div class="hero-card">
+        <!-- =====================================
+             HERO
+        ====================================== -->
 
-                <div class="terminal-top">
+        <section id="home" class="hero">
 
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <div class="container hero-grid">
 
-                </div>
 
-                <div class="terminal-body">
+                <!-- LEFT -->
 
-                    <p>
-                        <span class="code-keyword">
-                            class
-                        </span>
+                <div class="hero-content">
 
-                        <span class="code-name">
-                            AIEngineer
-                        </span>:
+                    <div class="status">
+
+                        <span class="status-dot"></span>
+
+                        AVAILABLE FOR AI/ML OPPORTUNITIES
+
+                    </div>
+
+
+                    <p class="eyebrow">
+                        PYTHON • AI/ML • BACKEND • LLM SYSTEMS
                     </p>
 
-                    <p class="indent">
-                        skills = [
-                    </p>
 
-                    <p class="indent2">
-                        "Python",
-                    </p>
+                    <h1>
 
-                    <p class="indent2">
-                        "Machine Learning",
-                    </p>
-
-                    <p class="indent2">
-                        "FastAPI",
-                    </p>
-
-                    <p class="indent2">
-                        "LLM Applications",
-                    </p>
-
-                    <p class="indent2">
-                        "AI Evaluation"
-                    </p>
-
-                    <p class="indent">
-                        ]
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ABOUT -->
-
-    <section id="about" class="section">
-
-        <div class="section-container">
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    ABOUT ME
-                </p>
-
-                <h2>
-                    Building practical AI applications.
-                </h2>
-
-            </div>
-
-
-            <div class="about-grid">
-
-                <div class="about-text">
-
-                    <p>
-
-                        I am a Python-focused developer
-                        interested in Artificial Intelligence,
-                        Machine Learning and intelligent
-                        application development.
-
-                    </p>
-
-                    <p>
-
-                        My projects focus on practical
-                        AI engineering including APIs,
-                        AI agents, evaluation systems,
-                        conversational memory and
-                        incident investigation.
-
-                    </p>
-
-                    <p>
-
-                        I enjoy building modular,
-                        testable and maintainable
-                        software systems.
-
-                    </p>
-
-                </div>
-
-
-                <div class="about-stats">
-
-                    <div class="stat-card">
-
-                        <strong>03</strong>
+                        I build
 
                         <span>
-                            AI Projects
+                            intelligent systems
                         </span>
+
+                        that solve real problems.
+
+                    </h1>
+
+
+                    <p class="hero-text">
+
+                        I'm Abhishek Shinde, a Python-focused
+                        AI/ML developer building practical
+                        systems around automation, evaluation,
+                        conversational AI and backend engineering.
+
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <a
+                            href="#projects"
+                            class="btn primary"
+                        >
+                            Explore Projects
+                            <span>→</span>
+                        </a>
+
+
+                        <a
+                            href="https://github.com/shinde-abhishek"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn secondary"
+                        >
+                            GitHub ↗
+                        </a>
 
                     </div>
 
 
-                    <div class="stat-card">
+                    <div class="hero-meta">
 
-                        <strong>Python</strong>
+                        <div>
+
+                            <strong>03</strong>
+
+                            <span>
+                                AI Projects
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>PY</strong>
+
+                            <span>
+                                Python
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <strong>API</strong>
+
+                            <span>
+                                FastAPI
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- RIGHT TERMINAL -->
+
+                <div class="system-window">
+
+                    <div class="window-header">
+
+                        <div class="window-buttons">
+
+                            <i></i>
+                            <i></i>
+                            <i></i>
+
+                        </div>
 
                         <span>
-                            Primary Language
+                            abhishek@ai-engineer
                         </span>
 
-                    </div>
-
-
-                    <div class="stat-card">
-
-                        <strong>FastAPI</strong>
-
-                        <span>
-                            Backend Development
-                        </span>
+                        <small>
+                            ● ONLINE
+                        </small>
 
                     </div>
 
 
-                    <div class="stat-card">
+                    <div class="terminal">
 
-                        <strong>AI/ML</strong>
+                        <p>
+                            <span class="green">
+                                $
+                            </span>
+                            whoami
+                        </p>
 
-                        <span>
-                            Core Focus
-                        </span>
+                        <p class="output">
+                            Abhishek Shinde
+                        </p>
+
+
+                        <p>
+                            <span class="green">
+                                $
+                            </span>
+                            role
+                        </p>
+
+                        <p class="output">
+                            Python / AI-ML Engineer
+                        </p>
+
+
+                        <p>
+                            <span class="green">
+                                $
+                            </span>
+                            focus
+                        </p>
+
+                        <p class="output">
+                            AI Systems + Backend
+                        </p>
+
+
+                        <p>
+                            <span class="green">
+                                $
+                            </span>
+                            projects --count
+                        </p>
+
+                        <p class="output">
+                            3 production-oriented projects
+                        </p>
+
+
+                        <p>
+                            <span class="green">
+                                $
+                            </span>
+                            system.status
+                        </p>
+
+                        <p class="success">
+                            ✓ SYSTEM READY
+                        </p>
+
+
+                        <div class="terminal-line"></div>
+
+
+                        <p class="cursor-line">
+
+                            <span class="green">
+                                $
+                            </span>
+
+                            building_next_system<span class="cursor">
+                                █
+                            </span>
+
+                        </p>
 
                     </div>
 
@@ -260,244 +293,1122 @@
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- SKILLS -->
 
-    <section id="skills" class="section section-alt">
+        <!-- =====================================
+             ENGINEERING SNAPSHOT
+        ====================================== -->
 
-        <div class="section-container">
+        <section
+            id="engineering"
+            class="section engineering-section"
+        >
 
-            <div class="section-heading">
+            <div class="container">
 
-                <p class="section-label">
-                    TECHNICAL SKILLS
-                </p>
+                <div class="section-head">
 
-                <h2>
-                    Technologies I work with.
-                </h2>
+                    <div>
+
+                        <p class="eyebrow">
+                            ENGINEERING SNAPSHOT
+                        </p>
+
+                        <h2>
+                            From problem
+                            <span>to system.</span>
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        My projects are designed around
+                        real engineering workflows rather
+                        than isolated AI experiments.
+                    </p>
+
+                </div>
+
+
+                <div class="pipeline">
+
+
+                    <div class="pipeline-step">
+
+                        <span>01</span>
+
+                        <div class="pipeline-icon">
+                            ◉
+                        </div>
+
+                        <h3>
+                            Problem
+                        </h3>
+
+                        <p>
+                            Identify the real-world
+                            workflow and user need.
+                        </p>
+
+                    </div>
+
+
+                    <div class="pipeline-arrow">
+                        →
+                    </div>
+
+
+                    <div class="pipeline-step">
+
+                        <span>02</span>
+
+                        <div class="pipeline-icon">
+                            ◇
+                        </div>
+
+                        <h3>
+                            Architecture
+                        </h3>
+
+                        <p>
+                            Design APIs, services,
+                            data flow and AI components.
+                        </p>
+
+                    </div>
+
+
+                    <div class="pipeline-arrow">
+                        →
+                    </div>
+
+
+                    <div class="pipeline-step">
+
+                        <span>03</span>
+
+                        <div class="pipeline-icon">
+                            ◆
+                        </div>
+
+                        <h3>
+                            Implementation
+                        </h3>
+
+                        <p>
+                            Build modular Python
+                            components and APIs.
+                        </p>
+
+                    </div>
+
+
+                    <div class="pipeline-arrow">
+                        →
+                    </div>
+
+
+                    <div class="pipeline-step">
+
+                        <span>04</span>
+
+                        <div class="pipeline-icon">
+                            ✓
+                        </div>
+
+                        <h3>
+                            Evaluation
+                        </h3>
+
+                        <p>
+                            Test behaviour, measure
+                            results and improve.
+                        </p>
+
+                    </div>
+
+                </div>
 
             </div>
 
+        </section>
 
-            <div class="skills-grid">
 
 
-                <div class="skill-card">
+        <!-- =====================================
+             PROJECTS
+        ====================================== -->
 
-                    <div class="skill-icon">
-                        PY
+        <section id="projects" class="section projects-section">
+
+            <div class="container">
+
+
+                <div class="section-head">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            FEATURED SYSTEMS
+                        </p>
+
+                        <h2>
+                            Projects built to
+                            <span>demonstrate engineering.</span>
+                        </h2>
+
                     </div>
 
-                    <h3>
-                        Python
-                    </h3>
-
                     <p>
-                        Core Python, OOP, data structures,
-                        modular development and testing.
+                        Three AI-focused systems covering
+                        AIOps, LLM evaluation and
+                        conversational memory.
                     </p>
 
                 </div>
 
 
-                <div class="skill-card">
 
-                    <div class="skill-icon">
-                        ML
-                    </div>
+                <!-- PROJECT 01 -->
 
-                    <h3>
-                        Machine Learning
-                    </h3>
+                <article class="case-study">
 
-                    <p>
-                        Model development, preprocessing,
-                        evaluation and experimentation.
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        API
-                    </div>
-
-                    <h3>
-                        FastAPI
-                    </h3>
-
-                    <p>
-                        REST APIs, validation and
-                        backend services.
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        AI
-                    </div>
-
-                    <h3>
-                        AI Applications
-                    </h3>
-
-                    <p>
-                        AI agents, LLM applications,
-                        evaluation and memory systems.
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        DB
-                    </div>
-
-                    <h3>
-                        Databases
-                    </h3>
-
-                    <p>
-                        SQLite, SQL fundamentals and
-                        structured application data.
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        Git
-                    </div>
-
-                    <h3>
-                        Development Tools
-                    </h3>
-
-                    <p>
-                        Git, GitHub, VS Code and
-                        automated testing.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROJECTS -->
-
-    <section id="projects" class="section">
-
-        <div class="section-container">
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    FEATURED PROJECTS
-                </p>
-
-                <h2>
-                    AI projects I've built.
-                </h2>
-
-                <p class="section-description">
-
-                    Practical AI engineering projects
-                    demonstrating backend development,
-                    AI systems and application design.
-
-                </p>
-
-            </div>
-
-
-            <div class="projects-grid">
-
-
-                <!-- PROJECT 1 -->
-
-                <article class="project-card">
-
-                    <div class="project-number">
+                    <div class="case-number">
                         01
                     </div>
 
-                    <span class="project-type">
-                        AIOps / AI AGENT
-                    </span>
 
-                    <h3>
-                        AI Incident Response Assistant
-                    </h3>
+                    <div class="case-main">
 
-                    <p>
+                        <div class="case-info">
 
-                        AI-powered incident investigation
-                        system for analyzing incidents,
-                        logs, service health and
-                        performance metrics.
-
-                    </p>
+                            <div class="project-status">
+                                ● AI / AIOps
+                            </div>
 
 
-                    <div class="tech-tags">
+                            <h3>
+                                AI Incident Response Assistant
+                            </h3>
 
-                        <span>Python</span>
-                        <span>FastAPI</span>
-                        <span>AI Agent</span>
-                        <span>REST API</span>
+
+                            <p class="case-description">
+
+                                An AIOps-style investigation
+                                system that combines incident
+                                information, logs, service health
+                                and performance metrics to help
+                                investigate application incidents.
+
+                            </p>
+
+
+                            <div class="architecture">
+
+                                <div>
+                                    Incident
+                                </div>
+
+                                <span>→</span>
+
+                                <div>
+                                    Logs
+                                </div>
+
+                                <span>→</span>
+
+                                <div>
+                                    Metrics
+                                </div>
+
+                                <span>→</span>
+
+                                <div>
+                                    Investigation
+                                </div>
+
+                                <span>→</span>
+
+                                <div>
+                                    Report
+                                </div>
+
+                            </div>
+
+
+                            <div class="case-features">
+
+                                <div>
+                                    <strong>
+                                        Incident Investigation
+                                    </strong>
+
+                                    <span>
+                                        Structured incident workflow
+                                    </span>
+                                </div>
+
+
+                                <div>
+                                    <strong>
+                                        Observability
+                                    </strong>
+
+                                    <span>
+                                        Logs, health and metrics
+                                    </span>
+                                </div>
+
+
+                                <div>
+                                    <strong>
+                                        Reporting
+                                    </strong>
+
+                                    <span>
+                                        Automated investigation reports
+                                    </span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="tags">
+
+                                <span>Python</span>
+                                <span>FastAPI</span>
+                                <span>AIOps</span>
+                                <span>REST API</span>
+                                <span>AI</span>
+
+                            </div>
+
+
+                            <a
+                                href="https://github.com/shinde-abhishek/AI-Incident-Response-Assistant"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="github-project"
+                            >
+                                View source on GitHub
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+
+                        <div class="system-card">
+
+                            <div class="mini-header">
+                                INCIDENT ENGINE
+                                <span>LIVE</span>
+                            </div>
+
+
+                            <div class="incident">
+
+                                <div class="incident-top">
+
+                                    <span>
+                                        INC-1001
+                                    </span>
+
+                                    <b>
+                                        HIGH
+                                    </b>
+
+                                </div>
+
+
+                                <h4>
+                                    Payment API Timeout
+                                </h4>
+
+
+                                <div class="metric-row">
+
+                                    <span>
+                                        Response
+                                    </span>
+
+                                    <strong>
+                                        5200ms
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="metric-row">
+
+                                    <span>
+                                        Error rate
+                                    </span>
+
+                                    <strong>
+                                        12.5%
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="metric-row">
+
+                                    <span>
+                                        CPU
+                                    </span>
+
+                                    <strong>
+                                        78%
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="diagnosis">
+
+                                    <span>AI ANALYSIS</span>
+
+                                    Connection pool /
+                                    database latency detected.
+
+                                </div>
+
+                            </div>
+
+                        </div>
 
                     </div>
-
-
-                    <a
-                        href="https://github.com/shinde-abhishek/AI-Incident-Response-Assistant"
-                        target="_blank"
-                        class="project-link">
-
-                        View Project →
-
-                    </a>
 
                 </article>
 
 
-                <!-- PROJECT 2 -->
 
-                <article class="project-card">
+                <!-- PROJECT 02 -->
 
-                    <div class="project-number">
+                <article class="case-study reverse">
+
+                    <div class="case-number">
                         02
                     </div>
 
-                    <span class="project-type">
-                        AI EVALUATION
-                    </span>
 
-                    <h3>
-                        Prompt Evaluation Framework
-                    </h3>
+                    <div class="case-main">
 
-                    <p>
+                        <div class="case-info">
 
-                        Framework for evaluating prompts
-                        and test cases with automated
-                        metrics, judge scoring,
-```
+                            <div class="project-status">
+                                ● LLM / EVALUATION
+                            </div>
+
+
+                            <h3>
+                                Prompt Evaluation Framework
+                            </h3>
+
+
+                            <p class="case-description">
+
+                                A structured evaluation platform
+                                for comparing prompts against
+                                test cases using multiple
+                                quality metrics and generating
+                                machine-readable reports.
+
+                            </p>
+
+
+                            <div class="architecture">
+
+                                <div>
+                                    Prompt
+                                </div>
+
+                                <span>→</span>
+
+                                <div>
+                                    Test Case
+                                </div>
+
+                                <span>→</span>
+
+                                <div>
+                                    Evaluation
+                                </div>
+
+                                <span>→</span>
+
+                                <div>
+                                    Metrics
+                                </div>
+
+                                <span>→</span>
+
+                                <div>
+                                    Report
+                                </div>
+
+                            </div>
+
+
+                            <div class="case-features">
+
+                                <div>
+
+                                    <strong>
+                                        Prompt Management
+                                    </strong>
+
+                                    <span>
+                                        Create and manage prompts
+                                    </span>
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Batch Evaluation
+                                    </strong>
+
+                                    <span>
+                                        Evaluate multiple combinations
+                                    </span>
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Quality Metrics
+                                    </strong>
+
+                                    <span>
+                                        Similarity, coverage and scoring
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="tags">
+
+                                <span>Python</span>
+                                <span>FastAPI</span>
+                                <span>LLM</span>
+                                <span>Evaluation</span>
+                                <span>CSV</span>
+
+                            </div>
+
+
+                            <a
+                                href="https://github.com/shinde-abhishek/Prompt-Evaluation-Framework"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="github-project"
+                            >
+                                View source on GitHub
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+
+                        <div class="system-card">
+
+                            <div class="mini-header">
+                                EVALUATION ENGINE
+                                <span>READY</span>
+                            </div>
+
+
+                            <div class="evaluation">
+
+                                <div class="eval-title">
+
+                                    Evaluation Run
+
+                                    <strong>
+                                        25
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="score">
+
+                                    <span>
+                                        Semantic similarity
+                                    </span>
+
+                                    <b>
+                                        0.91
+                                    </b>
+
+                                </div>
+
+
+                                <div class="score">
+
+                                    <span>
+                                        Keyword coverage
+                                    </span>
+
+                                    <b>
+                                        0.87
+                                    </b>
+
+                                </div>
+
+
+                                <div class="score">
+
+                                    <span>
+                                        Length score
+                                    </span>
+
+                                    <b>
+                                        0.94
+                                    </b>
+
+                                </div>
+
+
+                                <div class="score">
+
+                                    <span>
+                                        Overall score
+                                    </span>
+
+                                    <b class="highlight">
+                                        0.90
+                                    </b>
+
+                                </div>
+
+
+                                <div class="evaluation-bar">
+
+                                    <span></span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PROJECT 03 -->
+
+                <article class="case-study">
+
+                    <div class="case-number">
+                        03
+                    </div>
+
+
+                    <div class="case-main">
+
+                        <div class="case-info">
+
+                            <div class="project-status">
+                                ● CONVERSATIONAL AI
+                            </div>
+
+
+                            <h3>
+                                Conversational Memory Manager
+                            </h3>
+
+
+                            <p class="case-description">
+
+                                A memory management system for
+                                conversational AI that combines
+                                session history, buffer memory,
+                                summary memory and structured
+                                information.
+
+                            </p>
+
+
+                            <div class="architecture">
+
+                                <div>
+                                    User
+                                </div>
+
+                                <span>→</span>
+
+                                <div>
+                                    Session
+                                </div>
+
+                                <span>→</span>
+
+                                <div>
+                                    Buffer
+                                </div>
+
+                                <span>→</span>
+
+                                <div>
+                                    Summary
+                                </div>
+
+                                <span>→</span>
+
+                                <div>
+                                    Context
+                                </div>
+
+                            </div>
+
+
+                            <div class="case-features">
+
+                                <div>
+
+                                    <strong>
+                                        Session Memory
+                                    </strong>
+
+                                    <span>
+                                        Conversation history
+                                    </span>
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Summary Memory
+                                    </strong>
+
+                                    <span>
+                                        Compact long-term context
+                                    </span>
+
+                                </div>
+
+
+                                <div>
+
+                                    <strong>
+                                        Token Tracking
+                                    </strong>
+
+                                    <span>
+                                        Context usage monitoring
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="tags">
+
+                                <span>Python</span>
+                                <span>FastAPI</span>
+                                <span>LLM</span>
+                                <span>Memory</span>
+                                <span>API</span>
+
+                            </div>
+
+
+                            <a
+                                href="https://github.com/shinde-abhishek/conversational-memory-manager"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="github-project"
+                            >
+                                View source on GitHub
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+
+                        <div class="system-card">
+
+                            <div class="mini-header">
+                                MEMORY MANAGER
+                                <span>ACTIVE</span>
+                            </div>
+
+
+                            <div class="memory">
+
+                                <div class="memory-header">
+
+                                    <span>
+                                        SESSION
+                                    </span>
+
+                                    <strong>
+                                        #A17F
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="memory-item">
+
+                                    <span>
+                                        BUFFER
+                                    </span>
+
+                                    <b>
+                                        12 messages
+                                    </b>
+
+                                </div>
+
+
+                                <div class="memory-item">
+
+                                    <span>
+                                        SUMMARY
+                                    </span>
+
+                                    <b>
+                                        1 compact context
+                                    </b>
+
+                                </div>
+
+
+                                <div class="memory-item">
+
+                                    <span>
+                                        FACTS
+                                    </span>
+
+                                    <b>
+                                        4 stored
+                                    </b>
+
+                                </div>
+
+
+                                <div class="token-usage">
+
+                                    <div class="token-top">
+
+                                        <span>
+                                            Context usage
+                                        </span>
+
+                                        <strong>
+                                            71%
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="token-bar">
+
+                                        <span></span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             STACK
+        ====================================== -->
+
+        <section id="skills" class="section stack-section">
+
+            <div class="container">
+
+                <div class="section-head center">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            TECHNOLOGY STACK
+                        </p>
+
+                        <h2>
+                            Tools behind
+                            <span>the systems.</span>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stack-grid">
+
+                    <div class="stack-group">
+
+                        <span class="stack-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Programming
+                        </h3>
+
+                        <div class="stack-items">
+
+                            <span>Python</span>
+                            <span>OOP</span>
+                            <span>Data Structures</span>
+                            <span>SQL</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stack-group">
+
+                        <span class="stack-number">
+                            02
+                        </span>
+
+                        <h3>
+                            AI / ML
+                        </h3>
+
+                        <div class="stack-items">
+
+                            <span>Machine Learning</span>
+                            <span>NLP</span>
+                            <span>LLM Applications</span>
+                            <span>Prompt Engineering</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stack-group">
+
+                        <span class="stack-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Backend
+                        </h3>
+
+                        <div class="stack-items">
+
+                            <span>FastAPI</span>
+                            <span>REST APIs</span>
+                            <span>Pydantic</span>
+                            <span>API Design</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stack-group">
+
+                        <span class="stack-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Developer Tools
+                        </h3>
+
+                        <div class="stack-items">
+
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>VS Code</span>
+                            <span>n8n</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             INTERVIEW SECTION
+        ====================================== -->
+
+        <section class="interview-section">
+
+            <div class="container">
+
+                <div class="interview-card">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            INTERVIEW READY
+                        </p>
+
+                        <h2>
+                            Every project has a
+                            technical story.
+                        </h2>
+
+                        <p>
+                            Architecture decisions,
+                            API design, evaluation strategy,
+                            memory management and system
+                            trade-offs are documented in
+                            the project repositories.
+                        </p>
+
+                    </div>
+
+
+                    <div class="interview-points">
+
+                        <div>
+                            <span>01</span>
+                            Architecture
+                        </div>
+
+                        <div>
+                            <span>02</span>
+                            APIs
+                        </div>
+
+                        <div>
+                            <span>03</span>
+                            AI Logic
+                        </div>
+
+                        <div>
+                            <span>04</span>
+                            Evaluation
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             CONTACT
+        ====================================== -->
+
+        <section id="contact" class="section contact-section">
+
+            <div class="container contact-container">
+
+                <p class="eyebrow">
+                    CONNECT
+                </p>
+
+
+                <h2>
+                    Let's build useful
+                    <span>AI systems.</span>
+                </h2>
+
+
+                <p>
+                    Interested in Python, AI/ML,
+                    backend engineering and
+                    intelligent applications.
+                </p>
+
+
+                <div class="contact-actions">
+
+                    <a
+                        href="https://github.com/shinde-abhishek"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn primary"
+                    >
+                        GitHub Profile ↗
+                    </a>
+
+
+                    <a
+                        href="https://www.linkedin.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn secondary"
+                    >
+                        LinkedIn ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer>
+
+        <div class="container footer-container">
+
+            <p>
+                © <span id="year"></span>
+                Abhishek Shinde
+            </p>
+
+            <p>
+                Python • AI/ML • Engineering
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
